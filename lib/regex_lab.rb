@@ -16,7 +16,7 @@ end
 
 def valid_phone_number?(phone)
   phone.delete("_", "(", "(")
-  puts phone
+  puts phone.delete("_", "(", "(")
   if phone.match(/\d{7}/)
     return true
   else
