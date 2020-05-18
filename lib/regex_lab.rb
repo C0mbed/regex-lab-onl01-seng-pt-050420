@@ -15,7 +15,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.replace("_","")
+  phone.delete("_")
   if phone.match(/\d{7}/)
     return true
   end
