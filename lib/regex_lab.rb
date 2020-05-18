@@ -17,7 +17,7 @@ end
 def valid_phone_number?(phone)
   formatted_digits = phone.scan(/\d/)
   puts formatted_digits
-  if formatted_digits.match(/\d{7}/)
+  if formatted_digits.join.match(/\d{7}/)
     return true
   else
     return false
