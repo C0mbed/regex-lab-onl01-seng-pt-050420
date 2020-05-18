@@ -2,7 +2,7 @@ def starts_with_a_vowel?(word)
   if word.match(/\A[^aeiou]/)
     puts "I ran"
     return false
-  else
+  elsif word.match(/)
     return true
   end
 end
